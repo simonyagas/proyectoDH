@@ -1,5 +1,5 @@
 <!-- Consignas:
-    Tenés que crear un sitio web, el cual sea responsive y navegable a través de enlaces 
+    Tenés que crear un sitio web, el cual sea responsive y navegable a través de enlaces
     del mismo sitio con las siguientes páginas:
     1. Home - Con información general del proyecto
     2. F.A.Q. - Preguntas frecuentes
@@ -10,16 +10,16 @@
 
     Para el catálogo de productos (e-commerce)
 
-    Una sección en donde se listen todos los productos de nuestro sistema. 
-    Una sección en donde se pueda ver el detalle de un producto. 
+    Una sección en donde se listen todos los productos de nuestro sistema.
+    Una sección en donde se pueda ver el detalle de un producto.
     Y así mismo una sección en donde podamos ver cómo sería el carrito de compra de nuestra web.
     • Vista de listado de productos
     • Vista del detalle de un producto
     • Vista del carrito de compra
 
-    Formato de entrega:  Ya conocemos GIT, entonces te pedimos que en equipo creen un 
-    repositorio en el cual puedan trabajar y poder revisar modificaciones en equipo, 
-    solucionar problemas si se pisa el código y poder disponer de tu código en cualquier 
+    Formato de entrega:  Ya conocemos GIT, entonces te pedimos que en equipo creen un
+    repositorio en el cual puedan trabajar y poder revisar modificaciones en equipo,
+    solucionar problemas si se pisa el código y poder disponer de tu código en cualquier
     momento que tengas internet y controlar las versiones del mismo.
 
      -->
@@ -31,14 +31,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Codigo de boostrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <!-- Codigo de css -->
-     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="css/contact.css">
     <title>Contact</title>
 </head>
 <body>
-    
+  <section class="Material-contact-section section-padding seccion text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Section Titile -->
+            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h1 class="section-title">Contáctanos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Section Titile -->
+            <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+              <p>Contáctanos por cualquier consulta o inquietud, brindaremos una respuesta a la brevedad.</p>
+
+              <div class="find-widget ">
+               Company:  <a class="text-white" href="https://hostriver.ro">HostRiver</a>
+              </div>
+              <div class="find-widget">
+               Address: <a class="text-white" href="#">4435 Berkshire Circle Knoxville</a>
+              </div>
+              <div class="find-widget">
+                Phone:  <a class="text-white" href="#">+ 879-890-9767</a>
+              </div>
+
+              <div class="find-widget">
+                Website:  <a class="text-white" href="https://uny.ro">www.uny.ro</a>
+              </div>
+              <div class="find-widget">
+                 Program: <a class="text-white" href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
+              </div>
+            </div>
+            <!-- contact form -->
+            <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                    <!-- Name -->
+                    <div class="form-group label-floating">
+                      <label class="control-label text-white" for="name">Nombre</label>
+                      <input class="form-control text-white" id="name" type="text" name="name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group label-floating">
+                      <label class="control-labeltext-white text-white" for="email">Email</label>
+                      <input class="form-control text-white" id="email" type="email" name="email" required data-error="Please enter your Email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group label-floating">
+                      <label class="control-label text-white">Asunto</label>
+                      <input class="form-control text-white" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group label-floating text-white">
+                        <label for="message" class="control-label text-white">Mensaje</label>
+                        <textarea class="form-control text-white" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Form Submit -->
+                    <div class="form-submit mt-5 .bg-success">
+                        <button class="btn btn-common .bg-success text-white" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline  .bg-success text-white"></i> Enviar Mensaje</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
