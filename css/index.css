@@ -12,3 +12,14 @@
   float: left;
   padding: 10px;
 }
+
+
+.navbar{
+  position: fixed;
+}
+
+
+.pie {
+  float: left;
+  
+}
