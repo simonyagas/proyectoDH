@@ -1,5 +1,7 @@
 /* Copy this code in your css file. */
-
+.nav{
+  width= 100%;
+}
 html,body
 {
     width: 500px;
