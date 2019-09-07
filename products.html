@@ -1,5 +1,5 @@
 <!-- Consignas:
-    Tenés que crear un sitio web, el cual sea responsive y navegable a través de enlaces 
+    Tenés que crear un sitio web, el cual sea responsive y navegable a través de enlaces
     del mismo sitio con las siguientes páginas:
     1. Home - Con información general del proyecto
     2. F.A.Q. - Preguntas frecuentes
@@ -10,16 +10,16 @@
 
     Para el catálogo de productos (e-commerce)
 
-    Una sección en donde se listen todos los productos de nuestro sistema. 
-    Una sección en donde se pueda ver el detalle de un producto. 
+    Una sección en donde se listen todos los productos de nuestro sistema.
+    Una sección en donde se pueda ver el detalle de un producto.
     Y así mismo una sección en donde podamos ver cómo sería el carrito de compra de nuestra web.
     • Vista de listado de productos
     • Vista del detalle de un producto
     • Vista del carrito de compra
 
-    Formato de entrega:  Ya conocemos GIT, entonces te pedimos que en equipo creen un 
-    repositorio en el cual puedan trabajar y poder revisar modificaciones en equipo, 
-    solucionar problemas si se pisa el código y poder disponer de tu código en cualquier 
+    Formato de entrega:  Ya conocemos GIT, entonces te pedimos que en equipo creen un
+    repositorio en el cual puedan trabajar y poder revisar modificaciones en equipo,
+    solucionar problemas si se pisa el código y poder disponer de tu código en cualquier
     momento que tengas internet y controlar las versiones del mismo.
 
      -->
@@ -37,11 +37,239 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
      <!-- Codigo de css -->
-     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="css/products.css">
     <title>Productos de la tienda</title>
 </head>
 <body>
+<!-- Menu de navegacion -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="./img/logo.png" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="register.html" class="nav-item nav-link">Registro</a>
+                <a href="user.html" class="nav-item nav-link">Perfil</a>
+                <a href="products.html" class="nav-item nav-link">Productos</a>
+                <a href="#footer" class="nav-item nav-link">Contacto</a>
+                <a href="faq.html" class="nav-item nav-link">FAQ</a>
+            </div>
+            <form class="form-inline ml-auto">
+                <input type="text" class="form-control mr-sm-2" placeholder="Buscar">
+                <button type="submit" class="btn btn-outline-light">dale!</button>
+            </form>
+        </div>
+</nav>
+	
+  <div class="container">
+
+<br>  <h2 class="text-center">Nuestros productos <a href="http://bootstrap-ecommerce.com/"></a></h2>
+<hr>
+
+
+
+
+<div class="row">
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel1.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Another name of item</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+			<div class="price-wrap h5">
+				<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+			</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel2.jpg"> </div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Good product</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel3.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Product name goes here</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel1.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Another name of item</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+			<div class="price-wrap h5">
+				<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+			</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel2.jpg"> </div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Good product</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel3.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Product name goes here</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel1.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Another name of item</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+			<div class="price-wrap h5">
+				<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+			</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel2.jpg"> </div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Good product</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/carousel3.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Product name goes here</h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+</div> <!-- row.// -->
+
+
+
+</div>
+<!--container.//-->
+
+<br><br><br>
+<article class="bg-secondary mb-3">
+<div class="card-body text-center">
+    <h4 class="text-white">HTML UI KIT <br> Ready to use Bootstrap 4 components and templates </h4>
+<p class="h5 text-white"> for Ecommerce, marketplace, booking websites
+and product landing pages</p>   <br>
+<p><a class="btn btn-warning" target="_blank" href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com
+ <i class="fa fa-window-restore "></i></a></p>
+</div>
+<br><br><br>
+</article>
+
+
 </body>
 </html>

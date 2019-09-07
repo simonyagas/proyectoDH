@@ -1,5 +1,5 @@
 <!-- Consignas:
-    Tenés que crear un sitio web, el cual sea responsive y navegable a través de enlaces 
+    Tenés que crear un sitio web, el cual sea responsive y navegable a través de enlaces
     del mismo sitio con las siguientes páginas:
     1. Home - Con información general del proyecto
     2. F.A.Q. - Preguntas frecuentes
@@ -10,16 +10,16 @@
 
     Para el catálogo de productos (e-commerce)
 
-    Una sección en donde se listen todos los productos de nuestro sistema. 
-    Una sección en donde se pueda ver el detalle de un producto. 
+    Una sección en donde se listen todos los productos de nuestro sistema.
+    Una sección en donde se pueda ver el detalle de un producto.
     Y así mismo una sección en donde podamos ver cómo sería el carrito de compra de nuestra web.
     • Vista de listado de productos
     • Vista del detalle de un producto
     • Vista del carrito de compra
 
-    Formato de entrega:  Ya conocemos GIT, entonces te pedimos que en equipo creen un 
-    repositorio en el cual puedan trabajar y poder revisar modificaciones en equipo, 
-    solucionar problemas si se pisa el código y poder disponer de tu código en cualquier 
+    Formato de entrega:  Ya conocemos GIT, entonces te pedimos que en equipo creen un
+    repositorio en el cual puedan trabajar y poder revisar modificaciones en equipo,
+    solucionar problemas si se pisa el código y poder disponer de tu código en cualquier
     momento que tengas internet y controlar las versiones del mismo.
 
      -->
@@ -42,10 +42,34 @@
     <title>FAQ</title>
 </head>
 <body>
+<!-- Menu de navegacion -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <a href="#" class="navbar-brand">
+      <img src="./img/logo.png" height="28" alt="CoolBrand">
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="register.html" class="nav-item nav-link">Registro</a>
+          <a href="user.html" class="nav-item nav-link">Perfil</a>
+          <a href="products.html" class="nav-item nav-link">Productos</a>
+          <a href="#footer" class="nav-item nav-link">Contacto</a>
+          <a href="faq.html" class="nav-item nav-link">FAQ</a>
+      </div>
+      <form class="form-inline ml-auto">
+          <input type="text" class="form-control mr-sm-2" placeholder="Buscar">
+          <button type="submit" class="btn btn-outline-light">dale!</button>
+      </form>
+  </div>
+</nav>
 
         <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
                 <div class="container">
-                
+
                     <h2>Frequently Asked Questions </h2>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                       <div class="panel panel-default">
@@ -62,7 +86,7 @@
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="panel panel-default">
                         <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
                           <h3 class="panel-title">
@@ -76,7 +100,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, molestiae perferendis distinctio nam blanditiis animi cum repudiandae veniam maxime itaque pariatur. Nam eveniet non ex corrupti, libero sit amet quidem.</p>                          </div>
                         </div>
                       </div>
-                      
+
                       <div class="panel panel-default">
                         <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
                           <h3 class="panel-title">
@@ -90,7 +114,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, molestiae perferendis distinctio nam blanditiis animi cum repudiandae veniam maxime itaque pariatur. Nam eveniet non ex corrupti, libero sit amet quidem.</p>                          </div>
                         </div>
                       </div>
-                      
+
                       <div class="panel panel-default">
                         <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
                           <h3 class="panel-title">
@@ -105,9 +129,9 @@
                         </div>
                       </div>
                     </div>
-                
+
                 </div>
               </section>
-    
+
 </body>
 </html>
