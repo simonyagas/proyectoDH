@@ -13,74 +13,30 @@
 }
 
 
-<<<<<<< HEAD
-.navbar{
-  position: fixed;
-}
-
-
-.instagramboton {
-  text-decoration: none;
-  color: grey;
-  font-family: 'Playfair Display', sans-serif;
-=======
 .instagramboton {
   text-decoration: none;
   color: grey;
 
->>>>>>> master
   font-size: 22px;
 }
 
 .fa-instagram {
 color: grey;
-<<<<<<< HEAD
-  font-family: 'Playfair Display', sans-serif;
-=======
 
->>>>>>> master
   font-size: 22px;
 }
 
 .social {
-<<<<<<< HEAD
-  font-family: 'Playfair Display', sans-serif;
-=======
 
->>>>>>> master
   font-size: 22px;
 }
 
 .fa-envelope {
-<<<<<<< HEAD
-  font-family: 'Signika', sans-serif;
-=======
 
->>>>>>> master
   color: grey;
 
 }
 
-<<<<<<< HEAD
-body {
-        font-family: 'Signika', sans-serif;
-     }
-     .bg-grey {
-        background: #292929;
-     }
-     .logo-footer {
-        margin-bottom: 40px;
-     }
-     footer {
-            color: grey;
-     }
-     footer p, a {
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-}
-footer h6 {
-    font-family: 'Playfair Display', sans-serif;
-=======
 /* body {
       
      }
@@ -102,7 +58,6 @@ footer {
   color: grey;
 }
 footer h6 {
->>>>>>> master
     margin-bottom: 40px;
     position: relative;
 }
@@ -115,11 +70,7 @@ footer h6:after {
     left: 0;
     bottom: -20px;
 }
-<<<<<<< HEAD
-     .btn-footer {
-=======
 .btn-footer {
->>>>>>> master
                  color: grey;
 
                 text-decoration: none;
@@ -129,20 +80,12 @@ footer h6:after {
                 padding: 7px 30px;
                 line-height: 47px;
      }
-<<<<<<< HEAD
-     .btn-footer:hover {
-=======
 .btn-footer:hover {
->>>>>>> master
 
                 text-decoration: none;
 
      }
-<<<<<<< HEAD
-    .form-footer input[type="text"] {
-=======
 .form-footer input[type="text"] {
->>>>>>> master
         border: none;
     border-radius: 16px 0 0 16px;
     outline: none;
@@ -152,20 +95,12 @@ footer h6:after {
 ::placeholder {
     font-size: 10px;
     padding-left: 10px;
-<<<<<<< HEAD
-    font-style: italic;
-=======
     /* font-style: italic; */
->>>>>>> master
 }
  .form-footer input[type="button"] {
     border: none;
     background:#232323;
-<<<<<<< HEAD
-        margin-left: -5px;
-=======
     margin-left: -5px;
->>>>>>> master
     color: #fff;
     outline: none;
     border-radius: 0 16px 16px 0;
@@ -197,8 +132,4 @@ a:hover {
 .logo-part {
     border-right: 1px solid grey;
     height: 100%;
-<<<<<<< HEAD
-    }
-=======
 }
->>>>>>> master
