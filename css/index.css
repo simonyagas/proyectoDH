@@ -5,3 +5,22 @@
   width: 100vh;
   height: 95vh;
 }
+
+.chiquita{
+  width: 100%;
+  height: 80%;
+}
+@media (max-width: 767px) {
+  #carouselExampleControls{
+    display: none;
+  }
+  #fijaMobile{
+    display: inline;
+  }
+}
+
+@media (min-width: 767px){
+  #fijaMobile{
+    display: none;
+  }
+}
