@@ -26,7 +26,7 @@
 <body>
 <!-- Menu de navegacion -->
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <a href="#" class="navbar-brand">
+    <a href="index.html" class="navbar-brand">
         <img src="./img/logo.png" height="28" alt="CoolBrand">
     </a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -49,38 +49,41 @@
         </form>
     </div>
 </nav>
-<br><br><br>
-  <div class="container" >
-    <div class="row">
-    	<div class="col-12 col-md-8 col-lg-6 pb-5">
-    		<div class="panel panel-default">
-			  	<div class="panel-heading">
-			    	<h3 class="panel-title">Login via site</h3>
-			 	</div>
-			  	<div class="panel-body">
-			    	<form accept-charset="UTF-8" role="form">
-                    <fieldset>
-			    	  	<div class="form-group">
-			    		    <input class="form-control" placeholder="yourmail@example.com" name="email" type="text">
-			    		</div>
-			    		<div class="form-group">
-			    			<input class="form-control" placeholder="Password" name="password" type="password" value="">
-			    		</div>
-			    		<div class="checkbox">
-			    	    	<label>
-			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
-			    	    	</label>
-			    	    </div>
-			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
-			    	</fieldset>
-			      	</form>
-                      <hr/>
-                    <center><h4>OR</h4></center>
-                    <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
-			    </div>
-			</div>
-		</div>
-	</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-xl-9 mx-auto">
+      <div class="card card-signin flex-row my-5">
+        <div class="card-img-left d-none d-md-flex">
+           <!-- Background image for card set in CSS! -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Login</h5>
+          <form class="form-signin">
+            <div class="form-label-group">
+              <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+              <label for="inputUserame">Username</label>
+            </div>
+
+
+
+            <hr>
+
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <label for="inputPassword">Password</label>
+            </div>
+
+
+
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
+            <hr class="my-4">
+            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Login with Google</button>
+            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Login with Facebook</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <footer id="footer" class="page-footer font-small unique-color-dark">
   <!-- Footer Links -->
