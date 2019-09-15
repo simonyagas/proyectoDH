@@ -53,29 +53,30 @@
 <body>
 <!-- Menu de navegacion -->
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <a href="#" class="navbar-brand">
-            <img src="./img/logo.png" height="28" alt="CoolBrand">
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="register.html" class="nav-item nav-link">Registro</a>
-                <a href="user.html" class="nav-item nav-link">Perfil</a>
-                <a href="products.html" class="nav-item nav-link">Productos</a>
-                <a href="#footer" class="nav-item nav-link">Contacto</a>
-                <a href="faq.html" class="nav-item nav-link">FAQ</a>
-            </div>
-            <form class="form-inline ml-auto">
-                <input type="text" class="form-control mr-sm-2" placeholder="Buscar">
-                <button type="submit" class="btn btn-outline-light">dale!</button>
-            </form>
+    <a href="#" class="navbar-brand">
+        <img src="./img/logo.png" height="28" alt="CoolBrand">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="products.html" class="nav-item nav-link">Productos</a>
+            <a href="faq.html" class="nav-item nav-link">FAQ</a>
+            <a href="register.html" class="nav-item nav-link">Registro</a>
+            <a href="login.html" class="nav-item nav-link">Login</a>
+            <a href="user.html" class="nav-item nav-link">Perfil</a>
+            <a href="#footer" class="nav-item nav-link">Contacto</a>
         </div>
+        <form class="form-inline ml-auto">
+            <input type="text" class="form-control mr-sm-2" placeholder="Buscar">
+            <button type="submit" class="btn btn-outline-light">dale!</button>
+        </form>
+    </div>
 </nav>
-	
+<br><br><br>
   <div class="container">
 
 <br>  <h2 class="text-center">Nuestros productos <a href="http://bootstrap-ecommerce.com/"></a></h2>
@@ -87,9 +88,123 @@
 <div class="row">
 <div class="col-md-4">
 	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel1.jpg"></div>
+		<div class="img-wrap"><img src="img/producto1.jpg"></div>
 		<figcaption class="info-wrap">
-				<h4 class="title">Another name of item</h4>
+				<h4 class="title"> <a href="producto1.html" class="nav-item nav-link">Modelo Niza</a></h4>
+				<p class="desc"></p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+			<div class="price-wrap h5">
+				<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+			</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/producto2.jpg"> </div>
+		<figcaption class="info-wrap">
+				<h4 class="title"><a href="producto2.html" class="nav-item nav-link">Modelo Punta del Este</a></h4>
+				<p class="desc"></p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$580</span> <del class="price-old">$1180</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/producto3o.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title"><a href="producto3.html" class="nav-item nav-link">Modelo Bali</a></h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$720</span> <del class="price-old">$1380</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/producto4o.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title"><a href="producto4.html" class="nav-item nav-link">Modelo Texas</a></h4>
+				<p class="desc">Some small description goes here</p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+			<div class="price-wrap h5">
+				<span class="price-new">$420</span> <del class="price-old">$1980</del>
+			</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/producto5.jpg"> </div>
+		<figcaption class="info-wrap">
+				<h4 class="title"><a href="producto5.html" class="nav-item nav-link">Modelo New York</a></h4>
+				<p class="desc"></p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/producto6.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title"><a href="producto6.html" class="nav-item nav-link">Modelo Madrid</a></h4>
+				<p class="desc"></p>
+				<div class="rating-wrap">
+					<div class="label-rating">132 reviews</div>
+					<div class="label-rating">154 orders </div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
+				<div class="price-wrap h5">
+					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
+				</div> <!-- price-wrap.// -->
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div> <!-- col // -->
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap"><img src="img/producto7.jpg"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title"><a href="producto7.html" class="nav-item nav-link">Modelo Hombre1</a></h4>
 				<p class="desc">Some small description goes here</p>
 				<div class="rating-wrap">
 					<div class="label-rating">132 reviews</div>
@@ -106,9 +221,9 @@
 </div> <!-- col // -->
 <div class="col-md-4">
 	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel2.jpg"> </div>
+		<div class="img-wrap"><img src="img/producto8.jpg"> </div>
 		<figcaption class="info-wrap">
-				<h4 class="title">Good product</h4>
+				<h4 class="title"><a href="producto8.html" class="nav-item nav-link">Modelo Hombre 2</a></h4>
 				<p class="desc">Some small description goes here</p>
 				<div class="rating-wrap">
 					<div class="label-rating">132 reviews</div>
@@ -125,123 +240,9 @@
 </div> <!-- col // -->
 <div class="col-md-4">
 	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel3.jpg"></div>
+		<div class="img-wrap"><img src="img/producto9.jpeg"></div>
 		<figcaption class="info-wrap">
-				<h4 class="title">Product name goes here</h4>
-				<p class="desc">Some small description goes here</p>
-				<div class="rating-wrap">
-					<div class="label-rating">132 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-		</figcaption>
-		<div class="bottom-wrap">
-				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
-				<div class="price-wrap h5">
-					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
-		</div> <!-- bottom-wrap.// -->
-	</figure>
-</div> <!-- col // -->
-<div class="col-md-4">
-	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel1.jpg"></div>
-		<figcaption class="info-wrap">
-				<h4 class="title">Another name of item</h4>
-				<p class="desc">Some small description goes here</p>
-				<div class="rating-wrap">
-					<div class="label-rating">132 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-		</figcaption>
-		<div class="bottom-wrap">
-			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
-			<div class="price-wrap h5">
-				<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-			</div> <!-- price-wrap.// -->
-		</div> <!-- bottom-wrap.// -->
-	</figure>
-</div> <!-- col // -->
-<div class="col-md-4">
-	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel2.jpg"> </div>
-		<figcaption class="info-wrap">
-				<h4 class="title">Good product</h4>
-				<p class="desc">Some small description goes here</p>
-				<div class="rating-wrap">
-					<div class="label-rating">132 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-		</figcaption>
-		<div class="bottom-wrap">
-				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
-				<div class="price-wrap h5">
-					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
-		</div> <!-- bottom-wrap.// -->
-	</figure>
-</div> <!-- col // -->
-<div class="col-md-4">
-	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel3.jpg"></div>
-		<figcaption class="info-wrap">
-				<h4 class="title">Product name goes here</h4>
-				<p class="desc">Some small description goes here</p>
-				<div class="rating-wrap">
-					<div class="label-rating">132 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-		</figcaption>
-		<div class="bottom-wrap">
-				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
-				<div class="price-wrap h5">
-					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
-		</div> <!-- bottom-wrap.// -->
-	</figure>
-</div> <!-- col // -->
-<div class="col-md-4">
-	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel1.jpg"></div>
-		<figcaption class="info-wrap">
-				<h4 class="title">Another name of item</h4>
-				<p class="desc">Some small description goes here</p>
-				<div class="rating-wrap">
-					<div class="label-rating">132 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-		</figcaption>
-		<div class="bottom-wrap">
-			<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
-			<div class="price-wrap h5">
-				<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-			</div> <!-- price-wrap.// -->
-		</div> <!-- bottom-wrap.// -->
-	</figure>
-</div> <!-- col // -->
-<div class="col-md-4">
-	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel2.jpg"> </div>
-		<figcaption class="info-wrap">
-				<h4 class="title">Good product</h4>
-				<p class="desc">Some small description goes here</p>
-				<div class="rating-wrap">
-					<div class="label-rating">132 reviews</div>
-					<div class="label-rating">154 orders </div>
-				</div> <!-- rating-wrap.// -->
-		</figcaption>
-		<div class="bottom-wrap">
-				<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>
-				<div class="price-wrap h5">
-					<span class="price-new">$1280</span> <del class="price-old">$1980</del>
-				</div> <!-- price-wrap.// -->
-		</div> <!-- bottom-wrap.// -->
-	</figure>
-</div> <!-- col // -->
-<div class="col-md-4">
-	<figure class="card card-product">
-		<div class="img-wrap"><img src="img/carousel3.jpg"></div>
-		<figcaption class="info-wrap">
-				<h4 class="title">Product name goes here</h4>
+				<h4 class="title"><a href="producto9.html" class="nav-item nav-link">Modelo Hombre 3</a></h4>
 				<p class="desc">Some small description goes here</p>
 				<div class="rating-wrap">
 					<div class="label-rating">132 reviews</div>
@@ -264,16 +265,60 @@
 <!--container.//-->
 
 <br><br><br>
-<article class="bg-secondary mb-3">
-<div class="card-body text-center">
-    <h4 class="text-white">HTML UI KIT <br> Ready to use Bootstrap 4 components and templates </h4>
-<p class="h5 text-white"> for Ecommerce, marketplace, booking websites
-and product landing pages</p>   <br>
-<p><a class="btn btn-warning" target="_blank" href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com
- <i class="fa fa-window-restore "></i></a></p>
-</div>
-<br><br><br>
-</article>
+<footer id="footer" class="page-footer font-small unique-color-dark">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column1 -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <img src="./img/logo.png" class="w-50 logo-footer" >
+
+        </div>
+      <!-- Grid column1 -->
+
+      <!-- Grid column2 -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Cuerdas</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column2 -->
+
+      <!-- Grid column3 -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-envelope mr-3"></i> cuerdas.ba@gmail.com</p>
+        <p>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          <a href="https://www.instagram.com/cuerdas.ba/">  @cuerdas.ba</a></p>
+      </div>
+      <!-- Grid column3 -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> cuerdas.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 
 
 </body>
