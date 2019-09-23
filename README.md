@@ -3,9 +3,9 @@
 
 ### Integrantes del grupo
 
-* Juan Pablo (https://github.com/juampidalmo) :sunglasses:
-* Mica (https://github.com/micafreue) :raising_hand:
+* [Juan Pablo](https://github.com/juampidalmo) :sunglasses:
+* [Mica](https://github.com/micafreue) :raising_hand:
 * Nacho :grimacing:
-* Simón (https://github.com/simonyagas) :neckbeard:
+* [Simón](https://github.com/simonyagas) :neckbeard:
 
 
